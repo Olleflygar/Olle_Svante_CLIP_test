@@ -8,7 +8,7 @@ from torch.nn import functional as F
 
 ### Loading dataset ###
 def main():
-    N = 7000
+    N = 70
 
     transform = transforms.Compose([transforms.Resize((224, 224)), transforms.Grayscale(3)])
     mnist = datasets.MNIST(root = './data', download = True, train = True, transform=transform)
